@@ -1,0 +1,100 @@
+{
+  "name": "ovoz-kiritish",
+  "displayName": "Ovozli kiritish — o'zbekcha (Uzbek voice typing)",
+  "description": "O'zbekcha gapiring — matn kursor turgan joyga yoziladi. Windows va macOS, oflayn, bepul, Whisper modeli. Uzbek speech-to-text for any window.",
+  "publisher": "akromind",
+  "version": "0.3.4",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/akromind-ai/ovoz-kiritish"
+  },
+  "bugs": {
+    "url": "https://github.com/akromind-ai/ovoz-kiritish/issues"
+  },
+  "icon": "icon.png",
+  "engines": {
+    "vscode": "^1.80.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "keywords": [
+    "uzbek",
+    "o'zbek",
+    "voice",
+    "speech to text",
+    "whisper",
+    "dictation",
+    "ovoz",
+    "macos",
+    "windows"
+  ],
+  "main": "./extension.js",
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "extensionKind": [
+    "ui"
+  ],
+  "contributes": {
+    "commands": [
+      {
+        "command": "ovoz.start",
+        "title": "Овозли киритишни ёқиш",
+        "category": "Ovoz",
+        "icon": "$(mic)"
+      },
+      {
+        "command": "ovoz.stop",
+        "title": "Овозли киритишни ўчириш",
+        "category": "Ovoz",
+        "icon": "$(mic-filled)"
+      },
+      {
+        "command": "ovoz.toggle",
+        "title": "Овозли киритиш: ёқиш / ўчириш",
+        "category": "Ovoz"
+      },
+      {
+        "command": "ovoz.setup",
+        "title": "Ўрнатиш / қайта ўрнатиш (Python ва модел)",
+        "category": "Ovoz"
+      },
+      {
+        "command": "ovoz.openConfig",
+        "title": "Созламаларни очиш (клавиша, кирилл/лотин)",
+        "category": "Ovoz"
+      },
+      {
+        "command": "ovoz.showLog",
+        "title": "Логни очиш",
+        "category": "Ovoz"
+      }
+    ],
+    "menus": {
+      "editor/title": [
+        {
+          "command": "ovoz.start",
+          "when": "!ovoz.running",
+          "group": "navigation@-100"
+        },
+        {
+          "command": "ovoz.stop",
+          "when": "ovoz.running",
+          "group": "navigation@-100"
+        }
+      ]
+    },
+    "configuration": {
+      "title": "Ovozli kiritish",
+      "properties": {
+        "ovoz.autoStart": {
+          "type": "boolean",
+          "default": true,
+          "description": "VS Code очилганда овозли киритиш ўзи ёқилсин (ўрнатилгандан кейин)."
+        }
+      }
+    }
+  }
+}

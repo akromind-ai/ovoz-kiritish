@@ -1,0 +1,22 @@
+{
+  "hotkey": "ctrl+alt+space",
+  "hotkey_mac": "ctrl+shift+space",
+  "cancel_key": "esc",
+  "model": "AlexAnoshka/fast-whisper-uz-rubaistt-v2-medium-ct2",
+  "language": "uz",
+  "script": "cyrillic",
+  "press_enter": false,
+  "beam_size": 5,
+  "keep_latin": [
+    "VS Code",
+    "Claude",
+    "Python",
+    "JavaScript",
+    "GitHub",
+    "Git",
+    "npm",
+    "API",
+    "Windows",
+    "MacBook"
+  ]
+}

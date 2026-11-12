@@ -1,0 +1,13 @@
+.venv/
+__pycache__/
+*.pyc
+OVOZ_log.txt
+01_kengaytma/*.vsix
+
+# Repoga kirmaydi (faqat lokal)
+02_tayyor_paketlar/
+03_shaxsiy_v0.1/
+04_hujjatlar/
+05_mac_ornatgich/
+CLAUDE.md
+MANIFEST.md

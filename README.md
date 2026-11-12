@@ -11,7 +11,8 @@ Windows ва macOS (Apple Silicon ва Intel), VS Code кенгайтмаси о
 | Клавиша | Windows — **Ctrl+Alt+Space**, Mac — **Control+Shift+Space**; Esc — бекор қилиш |
 | Модел | `AlexAnoshka/fast-whisper-uz-rubaistt-v2-medium-ct2` (Apache-2.0), WER 9,9 % жонли нутқ |
 | Лицензия | MIT (кенгайтма коди) |
-| Marketplace | ҳали чиқарилмаган — қуйида «Нашр қилиш» |
+| GitHub | https://github.com/akromind-ai/ovoz-kiritish |
+| Marketplace | нашр жараёнида — қуйида «Нашр қилиш» |
 
 ## Папка тузилиши
 | Папка | Нима |
@@ -52,7 +53,7 @@ OVOZ_kiritish.py
 cd 01_kengaytma
 node --check extension.js                     # JS синтаксиси
 python -m py_compile python/OVOZ_kiritish.py  # Python синтаксиси
-npx --yes @vscode/vsce@3 package --allow-missing-repository   # → ovoz-kiritish-<версия>.vsix
+npx --yes @vscode/vsce@3 package   # → ovoz-kiritish-<версия>.vsix
 code --install-extension ovoz-kiritish-<версия>.vsix --force  # ўз компютерингизда синаш
 ```
 Версияни `package.json` да оширинг, `CHANGELOG.md` га ёзинг, тайёр `.vsix` ни `02_tayyor_paketlar/` га, эскисини `eski/` га олинг.
